@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main - print if the number n is greater than 5, is 0, is less than 6 and not 0
