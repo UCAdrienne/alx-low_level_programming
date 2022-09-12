@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *main - print if the number n is greater than 5, is 0,
+ *main: - print if the number n is greater than 5, is 0,
  *is less than 6 and not 0
  *Description: using the main function
  *this program prints "Program is >5, 0, <6"
@@ -27,7 +27,7 @@ if (p == 0)
 	{
 	printf("Last digit of %d is %d and is 0\n", n, p);
 	}
-if (p < 6 && x != 0)
+if (p < 6 && p != 0)
 	{
 	printf("Last digit of %d is %d and is less than 6 and not 0\n"
 		, n, p);
