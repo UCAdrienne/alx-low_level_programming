@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /**
- *main: - print if the number n is greater than 5, is 0,
- *is less than 6 and not 0
- *Description: using the main function
- *this program prints "Program is >5, 0, <6"
- *Return: 0
+ * main -> assign a random number to the variable n each time it is executed
+ * and print the last digit of the number stored in the variable n
+ * Return: Always 0 (Success)
 */
 int main(void)
 
