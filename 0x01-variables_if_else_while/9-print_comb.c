@@ -11,21 +11,22 @@
 int main(void)
 
 {
-	int num;
+	int ch;
 
-	for (num = 0; num <= 9; num++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-		putchar('0' + num);
+		putchar(ch);
 
-		if (num == 9)
-			continue;
+		if (ch != 57)
+		{
+			putchar(44);
 
-		putchar(',');
+			putchar(32);
 
-		putchar(' ');
-
-		putchar('\n');
-
+		}
 	}
+	putchar(10);
+
 	return (0);
+
 }
