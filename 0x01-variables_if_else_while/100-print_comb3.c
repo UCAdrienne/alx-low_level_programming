@@ -12,26 +12,31 @@
 int main(void)
 
 {
-	int digit1, digit2;
+	int ab;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	int p;
+
+	for (ab = 48; ab <= 57; ab++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
-		{	putchar((digit1 % 10) + '0');
+		for (p = 49; p <= 57; p++)
+		{
+			if (p > ab)
+			{
+				putchar(ab);
 
-			putchar((digit2 % 10) + '0');
+				putchar(p);
 
-			if (digit1 == 8 && digit2 == 9)
-			continue;
+				if (ab != 56 || p != 57)
+				{
+					putchar(44);
 
-			putchar(',');
+					putchar(32);
 
-			putchar(' ');
-
-			putchar('\n');
+				}
+			}
 		}
 	}
+	putchar(10);
 
 	return (0);
-
 }
