@@ -12,7 +12,7 @@ int main(void)
 
 	float tot_sum;
 
-	while
+	while (1)
 	{
 	fibsum = fib1 + fib2;
 
