@@ -7,8 +7,10 @@
 
 int is_prime_number(int n)
 {
-	if (n == 2)
-		return (1);
+	if (n <= 1)
+		return (0);
+	
 	else
-		return (check(2, n));
+		return (check_prime(n, 2));
+
 }
