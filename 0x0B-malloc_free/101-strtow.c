@@ -41,20 +41,14 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-
 	n = wrdcnt(str);
 		if (n == 1)
 			return (NULL);
-
 	q = (char **)malloc(n * sizeof(char *));
-
 	if (q == NULL)
 		return (NULL);
-
 	q[n - 1] = NULL;
-
 	i = 0;
-
 	while (str[i])
 	{
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
