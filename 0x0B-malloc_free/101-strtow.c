@@ -62,37 +62,24 @@ char **strtow(char *str)
 			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 				;
 			j++;
-
 			q[qa] = (char *)malloc(j * sizeof(char));
-
 			j--;
-
 			if (q[qa] == NULL)
 			{
 				for (k = 0; k < qa; k++)
 					free(q[k]);
-
 				free(q[n - 1]);
-
 				free(q);
-
 				return (NULL);
-
 			}
 			for (l = 0; l < j; l++)
 				q[qa][l] = str[i + l];
-
 			q[qa][l] = '\0';
-
 			qa++;
-
 			i += j;
-
 		}
 		else
 			i++;
-
 	}
 	return (q);
-
 }
