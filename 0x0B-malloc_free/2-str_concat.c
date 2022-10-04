@@ -11,13 +11,11 @@ char *str_concat(char *s1, char *s2)
 
 {
 	unsigned int i, j, q, r;
-
 	char *s;
 
 	if (s1 == NULL)
 	{
 		i = 0;
-
 	}
 	else
 	{
@@ -50,7 +48,5 @@ char *str_concat(char *s1, char *s2)
 		s[r + i] = s2[r];
 
 	s[i + j] = '\0';
-
 	return (s);
-
 }
